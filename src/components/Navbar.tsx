@@ -122,16 +122,16 @@ const Navbar: React.FC = () => {
       <Collapse in={isOpen} animateOpacity>
         <Box pb={4} display={{ md: "none" }}>
           <Flex as="ul" listStyleType="none" flexDirection="column" alignItems="center">
-            <Box as="li" mx={3}>
+            <Box as="li" m={3}>
               <Link href="/" className="hover:underline hover:text-purple-600" onClick={onToggle}>Home</Link>
             </Box>
-            <Box as="li" mx={3}>
+            <Box as="li" m={3}>
               <Link href="/about" className="hover:underline hover:text-purple-600" onClick={onToggle}>About</Link>
             </Box>
-            <Box as="li" mx={3}>
+            <Box as="li" m={3}>
               <Link href="/contact" className="hover:underline hover:text-purple-600" onClick={onToggle}>Contact Us</Link>
             </Box>
-            <Box as="li" mx={3}>
+            <Box as="li" m={3}>
               <Link href="/admin" className="border-2 p-1 hover:bg-black hover:text-white" onClick={onToggle}>Admin Login</Link>
             </Box>
             <Box>
@@ -157,8 +157,8 @@ const Navbar: React.FC = () => {
                 </Menu>
               ) : (
                 <Flex flexDirection="column" alignItems="center">
-                  <Link href="/signin" className="border-2 px-3 py-2 rounded-3xl text-purple-600 border-purple-600 mx-1" onClick={onToggle}>Log In</Link>
-                  <Link href="/signup" className="border-2 px-3 py-2 rounded-3xl bg-purple-600 border-purple-600 text-white hover:bg-white hover:text-purple-600 mx-1" onClick={onToggle}>Signup</Link>
+                  <Link href="/signin" className="border-2 px-3 py-2 rounded-3xl text-purple-600 border-purple-600 m-2" onClick={onToggle}>Log In</Link>
+                  <Link href="/signup" className="border-2 px-3 py-2 rounded-3xl bg-purple-600 border-purple-600 text-white hover:bg-white hover:text-purple-600 m-2" onClick={onToggle}>Signup</Link>
                 </Flex>
               )}
             </Box>
