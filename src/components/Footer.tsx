@@ -61,10 +61,10 @@ const Footer: React.FC = () => {
           </Stack>
           <Stack spacing={2} className="font-medium" mt={{ base: 6, md: 0 }} ml={{ base: 0, lg: 10 }} flex="1" minW={{ base: "full", md: "auto" }}>
             <Text fontWeight="bold">Company</Text>
-            <Link href="/">About Us</Link>
+            <Link href="/about">About Us</Link>
             <Link href="/getstarted">Get Started</Link>
             <Link href="/contact">Contact Us</Link>
-            <Link href="/testimonials">Testimonials</Link>
+            <Link href="/testimonial">Testimonials</Link>
           </Stack>
         </Flex>
       </Flex>
