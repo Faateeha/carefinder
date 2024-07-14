@@ -104,9 +104,9 @@ const Navbar: React.FC = () => {
               </MenuButton>
               <MenuList>
                 <Link href="/user" passHref>
-                  <MenuItem as="a">Dashboard</MenuItem>
+                  <MenuItem as="a">My profile</MenuItem>
                 </Link>
-                <MenuItem onClick={handleSignOut}>Logout</MenuItem>
+                <MenuItem className="text-red-500" onClick={handleSignOut}>Logout</MenuItem>
               </MenuList>
             </Menu>
           ) : (
@@ -150,9 +150,9 @@ const Navbar: React.FC = () => {
                   </MenuButton>
                   <MenuList>
                     <Link href="/user" passHref>
-                      <MenuItem as="a" onClick={onToggle}>Dashboard</MenuItem>
+                      <MenuItem as="a" onClick={onToggle}>My profile</MenuItem>
                     </Link>
-                    <MenuItem onClick={handleSignOut}>Logout</MenuItem>
+                    <MenuItem className="text-red-500" onClick={handleSignOut}>Logout</MenuItem>
                   </MenuList>
                 </Menu>
               ) : (
